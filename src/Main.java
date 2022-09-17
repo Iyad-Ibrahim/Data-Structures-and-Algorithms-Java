@@ -1,4 +1,6 @@
+import java.util.Collections;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Stack;
 
@@ -62,6 +64,71 @@ public class Main {
 		
 		//----------------------------------------------------------------------
 		
+		// Priority Queue is data structure that orders elements based on priority
+		// Higher priority elements first
+		
+		/*
+		Queue<Double> scoreQ = new PriorityQueue<>(Collections.reverseOrder()); //when passing Doubles to PriorityQueue it orders them in ascending order by defualt, the order can be reversed using the Collections.reverseOrder() Comparator
+		
+		scoreQ.offer(9.0);
+		scoreQ.offer(7.5);
+		scoreQ.offer(8.0);
+		scoreQ.offer(6.0);
+		scoreQ.offer(5.5);
+		
+		//System.out.println(scoreQ); //print only displays the elements of the queue in the order of entry not by priority
+		
+		while(!scoreQ.isEmpty()) {
+			System.out.println(scoreQ.poll());
+		}
+		*/
+		
+		//----------------------------------------------------------------------
+		
+		// LinkedList is a sequential data structure consisting of linked Nodes
+		//
+		// each Node consists of two parts: [data + address(s)]
+		//
+		//
+		//							Singly Linked List
+		//				Node				Node				Node
+		//		   [data | next] ----> [data | next] ----> [data | next]
+		//
+		//							Doubly Linked List
+		//				      Node							 Node
+		//		   [previous | data | next]  <->  [previous | data | next]
+		//
+		//
+		// Nodes are stored in non-consecutive memory addresses
+		//
+		// LinkedLists are not indexed and therefore elements can't be accessed randomly, so they can only be searched linearly ( O(n) )
+		// Their advantage over arrays lies in the fact that insertions are very efficient since they dont require shifting of elements ( O(1) )
+		//
+		// Useful methods:
+		// peekFisrt()
+		// peekLast()
+		// addFirst()
+		// addLast()
+		// removeFirst()
+		// removeLast()
+		
+		/*
+		LinkedList<String> linkedList = new LinkedList<>();
+		
+		linkedList.push("Mazda 626");
+		linkedList.push("BMW 335i");
+		linkedList.push("BMW 728i");
+		linkedList.push("BMW 330xi");
+		
+		linkedList.add(1, "BMW 530i");
+		linkedList.push("scrubmobile");
+		
+		System.out.println(linkedList);
+		
+		linkedList.remove("scrubmobile");
+		
+		System.out.println(linkedList);
+		*/
 		
 
 	}
