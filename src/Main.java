@@ -64,7 +64,7 @@ public class Main {
 		
 		//----------------------------------------------------------------------
 		
-		// Priority Queue is data structure that orders elements based on priority
+		// Priority Queue is a data structure that orders elements based on priority
 		// Higher priority elements first
 		
 		/*
@@ -88,6 +88,9 @@ public class Main {
 		// LinkedList is a sequential data structure consisting of linked Nodes
 		//
 		// each Node consists of two parts: [data + address(s)]
+		//
+		// next: address of next node
+		// previous: address of previous node
 		//
 		//
 		//							Singly Linked List
